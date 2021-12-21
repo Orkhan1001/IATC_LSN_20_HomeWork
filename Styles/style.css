@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Div */
+.t_main{
+    /* transform: rotate(90deg); */
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border: solid;
+}
+
+/* ALl Cards */
+.t_main div{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    position: absolute;
+}
+
+/* Normal Cards */
+.t_card{
+    background-color: lightseagreen;
+    position: relative;
+    z-index: 2;
+    /* visibility: hidden; */
+}
+
+/* Hidden Cards */
+.t_hiddenCard{
+    position: absolute;
+    z-index: 1;
+}
+
+/* Star Cards */
+.t_starCard{
+    /* transform: rotate(-90deg); */
+
+    background-image: url('https://starpng.com/public/uploads/preview/golden-stars-transparent-background-png-101577102149tbievgnnzg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    /* visibility: hidden; */
+}
+
+/* You WINN */
+#tYouWinn{
+    border: solid;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    background-image: url('https://thumbs.dreamstime.com/b/vector-stock-comic-explosion-bang-boom-you-win-text-comic-cartoon-bang-exsplosion-you-win-text-126376540.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    visibility: hidden;
+}
