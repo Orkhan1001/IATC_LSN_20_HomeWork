@@ -148,6 +148,9 @@ function tAskContinue() {
                 t_starCard[i].style.zIndex = 0;
             }
             tCounterForYouWinMessage = 0;
+            tPreviousCardIndex = 0;
+            tClickedCardIndex = 0;
+            tClickCounter = 0;
 
             tRotater += 90;
             let tRotated = "rotate(" + tRotater + "deg)"
